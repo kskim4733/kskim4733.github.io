@@ -14,51 +14,48 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
 	<script src="typed.min.js" type="text/javascript"></script>
 	<script>
-	var i = 0;
-	var txt = 'KYLE KIM'; /* The text */
-	var speed = 100; /* The speed/duration of the effect in milliseconds */
-	setTimeout(initText, speed);
-	setTimeout(typeWriter, speed); //where the typing animation is being called
-	var cycleCounter = 0;
-	var maxCycle = 2; //cursor blinking time
-	var textID = "myname"; //html my name ID
+		var elementID = "myname"; //id of the place where the typing will happen
+		var writeInNewLine = true;
+		var aText = new Array("KYLE KIM","Computer Scientist"); // set up text to print, each item in array is new line
+		var iSpeed = 100; // time delay of print out
+		var iIndex = 0; // start printing array at this posision
+		var iArrLength = aText[0].length; // the length of the text array
+		var iScrollAt = 20; // start scrolling up at this many lines
+		 
+		var iTextPos = 0; // initialise text position
+		var sContents = ''; // initialise contents variable
+		var iRow; // initialise current row
+		 
+		function typewriter(){
+			sContents =  ' ';
+		 	iRow = Math.max(0, iIndex-iScrollAt);
+		 	var destination = document.getElementById(elementID);
+			if (writeInNewLine == true){
+			 	while ( iRow < iIndex ) { //if iRow is smaller than iIndex than add irow so that we can move on to nxt string
+			  	sContents += aText[iRow++] + '<br />';
+			 	}
+			}
+		 	// destination.innerHTML = sContents + aText[iIndex].substring(0, iTextPos) + "<span>|</span>";
 
-	function initText(){
-		document.getElementById(textID).innerHTML = txt;
-		var width = document.getElementById(textID).offsetWidth;
-		var half = (screen.width/2) - (width/2);
-		document.getElementById(textID).style.left = half+"px";
-		document.getElementById(textID).innerHTML = ''
-	}
-	function blinkCursor(){
-		if (cycleCounter < maxCycle){
-			if (document.getElementById(textID).innerHTML.slice(-1) != "|"){ //not |
-				document.getElementById(textID).innerHTML += "|";
-			}
-			else{
-				var newStr = document.getElementById(textID).innerHTML;
-			  	var newStr = newStr.substring(0, newStr.length-1); //removing last character
-			  	document.getElementById(textID).innerHTML = newStr;
-			    cycleCounter += 1;
-			}
-			setTimeout(blinkCursor, speed)
-		}else if(i == txt.length){
-			document.getElementById(textID).style.left = ''
-			document.getElementById("temp").style.textAlign = "center";
-		}else{
-			typeWriter();
-			cycleCounter = 0;
+		 	if ( iTextPos++ == iArrLength ) {
+		 		destination.innerHTML = sContents + aText[iIndex].substring(0, iTextPos) + "<span>|</span>"; //add blinking animation to span tag
+			  	iTextPos = 0;
+			  	iIndex++;
+			  	if ( iIndex != aText.length ) {
+			   		iArrLength = aText[iIndex].length;
+			   		setTimeout("typewriter()", 500);
+			  	}
+		 	}else{
+		  		setTimeout("typewriter()", iSpeed);
+		  		destination.innerHTML = sContents + aText[iIndex].substring(0, iTextPos) + "|";
+		 	}
 		}
-	}
-	function typeWriter() {
-	  if (i < txt.length) {
-	    document.getElementById("myname").innerHTML += txt.charAt(i);
-	    document.getElementById("myname").innerHTML += "|";
-	    i++;
-	    setTimeout(blinkCursor, speed);
-	  }
-	}
+		setTimeout(typewriter,500); // calling the function
 	</script>
+  
+
+
+
 </head>
 
 <body>

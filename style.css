@@ -1,6 +1,6 @@
-/*.typewriter{
+.typewriter{
     text-align: center;
-}*/
+}
 #myname {
     font-family: Arial Black;
     font-size: 50px;
@@ -77,4 +77,14 @@ navItem:hover {
 p{
     font-size: 5px;
     font-family: monospace;
+}
+
+span{
+    color: black;
+    animation: blink 1s linear infinite;
+}
+@keyframes blink{
+    0%{opacity: 0;}
+    50%{opacity: .5;}
+    100%{opacity: 1;}
 }
