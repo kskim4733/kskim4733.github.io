@@ -18,6 +18,7 @@
 
 	<link rel="shortcut icon" href="img/icon.ico">
 	<link rel="icon" type="image/png" href="img/icon.png">
+	<script src="buttonActions.js"></script>
 	<script src="typing.js"></script>
 	<script src="drawFace.js"></script>
 	<script src="rMenu.js"></script>
@@ -32,7 +33,7 @@
 			  	<a href="#projects">Side Project</a>
 			  	<a href="#resume">Resume</a>
 			  	<a href="#contact">Contact</a>
-			  	<a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+			  	<a href="javascript:void(0);" class="icon" onclick="responsiveToggle()">&#9776;</a>
 			</div>
 		</div>
 	</div>
@@ -43,9 +44,9 @@
 	</div>
 <!-- Social button menubar -->
 	<div class="wrapper">
-		<button id="socialBtn" href="https://github.com/kskim4733"><i class="fab fa-github-square"></i> GitHub</button>
-		<button id="socialBtn" href="https://www.linkedin.com/in/kyle-kim-73373abb/"><i class="fab fa-linkedin"></i> LinkedIn</button>
-		<button id="socialBtn" href = "mailto: kskim4733@gmail.com"><i class="fas fa-envelope-square"></i> E-Mail</button>
+		<button id="socialBtn" onclick="openGit()"><i class="fab fa-github-square"></i> GitHub</button>
+		<button id="socialBtn" onclick="openLinkedin()"><i class="fab fa-linkedin"></i> LinkedIn</button>
+		<button id="socialBtn" onclick="openEmail()"><i class="fas fa-envelope-square"></i> E-Mail</button>
 	</div>
 	<div class="container">
 	 	<div class="row">
