@@ -8,63 +8,38 @@
 	<title>Kyle Kim</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<link rel="stylesheet" href="style.css" />
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
-	<script>
-		var elementID = "myname"; //id of the place where the typing will happen
-		var writeInNewLine = true;
-		var aText = new Array("KYLE KIM","Computer Scientist"); // set up text to print, each item in array is new line
-		var iSpeed = 100; // time delay of print out
-		var iIndex = 0; // start printing array at this posision
-		var iArrLength = aText[0].length; // the length of the text array
-		var iScrollAt = 20; // start scrolling up at this many lines
-		var iTextPos = 0; // initialise text position
-		var sContents = ''; // initialise contents variable
-		var iRow; // initialise current row
-		 
-		function typewriter(){
-			sContents =  ' ';
-		 	iRow = Math.max(0, iIndex-iScrollAt);
-		 	var destination = document.getElementById(elementID);
-			if (writeInNewLine == true){
-			 	while ( iRow < iIndex ) { //if iRow is smaller than iIndex than add irow so that we can move on to nxt string
-			  	sContents += aText[iRow++] + '<br />';
-			 	}
-			}
-		 	if ( iTextPos++ == iArrLength ) {
-		 		destination.innerHTML = sContents + aText[iIndex].substring(0, iTextPos) + "<span>|</span>"; //add blinking animation to span tag
-			  	iTextPos = 0;
-			  	iIndex++;
-			  	if ( iIndex != aText.length ) {
-			   		iArrLength = aText[iIndex].length;
-			   		setTimeout("typewriter()", 500);
-			  	}
-		 	}else{
-		  		setTimeout("typewriter()", iSpeed);
-		  		destination.innerHTML = sContents + aText[iIndex].substring(0, iTextPos) + "|";
-		 	}
-		}
-		setTimeout(typewriter,500); // calling the function
-	</script>
+	<link href='https://fonts.googleapis.com/css?family=Allerta Stencil' rel='stylesheet'>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!--Linking all the neccessary-->
+	<link rel="stylesheet" href="style.css" />
+	<link rel="stylesheet" href="rMenu.css" />
+
+	<link rel="shortcut icon" href="img/icon.ico">
+	<link rel="icon" type="image/png" href="img/icon.png">
+
+	<script src="typing.js"></script>
+	<script src="rMenu.js"></script>
+<!-- importing javascript and css-->
 </head>
-<!-- Top Menu buttons -->
 <body>
 	<div class="container">
 		<div class="row">
-			<ul>
-				<li><navItem href = "LINK">About</a></li>
-				<li><navItem href = "LINK">Side Projects</a></li>
-				<li><navItem href = "LINK">Resume</a></li>
-				<li><navItem href = "LINK">Contact</a></li>
-			</ul>
+			<div class="topnav" id="myTopnav">
+			  	<a href="#home" class="active">Home</a>
+			  	<a href="#about">About</a>
+			  	<a href="#projects">Side Project</a>
+			  	<a href="#resume">Resume</a>
+			  	<a href="#contact">Contact</a>
+			  	<a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+			</div>
 		</div>
 	</div>
 
 <!-- Where my name and typing animatio goes -->
 	<div class="typewriter">
-		<h1 id='myname' style="font-color: white;"></h1>
+		<h1 id='myname'></h1>
 	</div>
 <!-- Social button menubar -->
 	<div class="wrapper">
@@ -79,7 +54,7 @@
 					<p>
 					<img src='img/myUglyFace.jpg' id='facePic' alt="My puny head" class="left" />
 
-					<p id=selfText style="font-family: Headline R">
+					<p id=selfText>
 						<br>
 						I am an enthusiastic Programmer with 5 years of programming experiences in Java, C++, and Python. <br><br>
 						I have always considered myself as a self-learning individual with great teamwork skill. <br><br>

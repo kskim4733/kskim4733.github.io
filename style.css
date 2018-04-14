@@ -1,38 +1,15 @@
+body{
+    font-family: 'Allerta Stencil';font-size: 22px;
+}
 .typewriter{
     text-align: center;
 }
 #myname {
-    font-family: Arial Black;
     font-size: 50px;
     position: relative; 
     white-space: nowrap;
     display:inline-block;
 }
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-   	text-align: center;
-}
-
-li {
-    float: left;
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 10px 3em;
-    text-decoration: none;
-    font-size: 20px;
-}
-
-/* Change the link color to #111 (black) on hover */
-navItem:hover {
-    background-color: white;
-    color: black;
-}
-
 .wrapper {
     text-align: center;
     padding: 5px 5px; /* Some padding */
@@ -67,7 +44,6 @@ navItem:hover {
 
 #selfText{
     font-size: 13px;
-    font-family: Arial Black;
 }
 #textImage{
     text-align: center;
