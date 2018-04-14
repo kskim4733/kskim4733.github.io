@@ -21,7 +21,6 @@
 		var iIndex = 0; // start printing array at this posision
 		var iArrLength = aText[0].length; // the length of the text array
 		var iScrollAt = 20; // start scrolling up at this many lines
-		 
 		var iTextPos = 0; // initialise text position
 		var sContents = ''; // initialise contents variable
 		var iRow; // initialise current row
@@ -35,8 +34,6 @@
 			  	sContents += aText[iRow++] + '<br />';
 			 	}
 			}
-		 	// destination.innerHTML = sContents + aText[iIndex].substring(0, iTextPos) + "<span>|</span>";
-
 		 	if ( iTextPos++ == iArrLength ) {
 		 		destination.innerHTML = sContents + aText[iIndex].substring(0, iTextPos) + "<span>|</span>"; //add blinking animation to span tag
 			  	iTextPos = 0;
@@ -52,10 +49,6 @@
 		}
 		setTimeout(typewriter,500); // calling the function
 	</script>
-  
-
-
-
 </head>
 
 <body>
@@ -66,7 +59,7 @@
 		<li><navItem href = "LINK">Contact</a></li>
 	</ul>
 
-	<div class="typewriter" id="temp">
+	<div class="typewriter">
 		<h1 id='myname' style="font-color: white;"></h1>
 	</div>
 
@@ -76,6 +69,9 @@
 		<button class="socialBtn"><i class="fas fa-envelope-square"></i> E-Mail</button>
 	</div>
 	<div class="container">
+		<div class="row">
+
+		</div>
 	 	<div class="row">
 	    	<div class="col-sm-6 col-md-6 col-xs-12">
 	    		<div class="container">
@@ -87,6 +83,7 @@
 						I am an enthusiastic Programmer with 5 years of programming experiences in Java, C++, and Python. <br><br>
 						I have always considered myself as a self-learning individual with great teamwork skill. <br><br>
 						I am responsible and initiative individual who always accomplishes the given task before the deadline. <br>
+						Dont even bother reading this its all bullshit right now NOT DONE!! <br>
 					</p>
 
 					</p>
