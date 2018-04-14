@@ -72,7 +72,7 @@ var iScrollAt2 = 20; // start scrolling up at this many lines
 var iTextPos2 = 0; // initialise text position
 var sContents2 = ''; // initialise contents variable
 var iRow2; // initialise current row
- 
+var writeSpeed = 50;
 function typewriter2(){
 	sContents2 =  ' ';
  	iRow2 = 0;
@@ -88,7 +88,7 @@ function typewriter2(){
 	  	iIndex2++;
 	  	if ( iIndex2 != aText2.length ) {
 	   		iArrLength2 = aText2[iIndex2].length;
-	   		setTimeout("typewriter2()", 200);
+	   		setTimeout("typewriter2()", writeSpeed);
 	  	}
  	}else{
   		setTimeout("typewriter2()", iSpeed2);
@@ -96,4 +96,4 @@ function typewriter2(){
  	}
 }
 
-setTimeout(typewriter2,200); // calling the function
+setTimeout(typewriter2,writeSpeed); // calling the function
