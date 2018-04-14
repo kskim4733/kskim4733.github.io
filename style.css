@@ -1,5 +1,5 @@
 body{
-    font-family: 'Allerta Stencil';font-size: 22px;
+    font-family: 'Allerta Stencil';font-size: 23px;
 }
 .typewriter{
     text-align: center;
@@ -15,7 +15,7 @@ body{
     padding: 5px 5px; /* Some padding */
 }
 
-.socialBtn {
+#socialBtn {
     background-color: #333; /* Blue background */
     border: none; /* Remove borders */
     color: white; 
@@ -47,7 +47,7 @@ body{
 }
 #textImage{
     text-align: center;
-    font-size: 6px;
+    font-size: 2px;
     font-family: monospace;
 }
 
