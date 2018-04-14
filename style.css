@@ -1,3 +1,13 @@
+/*.typewriter{
+    text-align: center;
+}*/
+#myname {
+    font-family: Arial Black;
+    font-size: 50px;
+    position: relative; 
+    white-space: nowrap;
+    display:inline-block;
+}
 ul {
     list-style-type: none;
     margin: 0;
@@ -15,8 +25,9 @@ navItem {
     display: block;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding: 5px 10em;
     text-decoration: none;
+    font-size: 15px;
 }
 
 /* Change the link color to #111 (black) on hover */
@@ -24,4 +35,46 @@ navItem:hover {
     background-color: white;
     color: black;
 
+}
+.wrapper {
+    text-align: center;
+    padding: 5px 5px; /* Some padding */
+}
+
+.socialBtn {
+    background-color: #333; /* Blue background */
+    border: none; /* Remove borders */
+    color: white; 
+    padding-right: 10px;
+    padding-left: 10px;
+    font-size: 23px; 
+    cursor: pointer; /* Mouse pointer on hover */
+    border-radius: 4px;
+}
+.fab{
+     font-size: 23px;
+}
+.fas{
+     font-size: 23px;
+}
+#facePic{
+    width: 230px;
+    float: left;
+    margin-right: 4rem; /*add spaces between text and the phot*/
+    border-radius: 50%;
+    -webkit-shape-outside:circle();
+    border: 3px solid black;
+    box-shadow: 0 0 0 rgba(0, 0, 0, .8);
+
+}
+
+#selfText{
+    font-size: 13px;
+}
+#textImage{
+    text-align: center;
+}
+p{
+    font-size: 5px;
+    font-family: monospace;
 }
