@@ -10,3 +10,6 @@ function openEmail() {
 	window.location.href = "mailto:kskim4733@gmail.com"
 }
 
+function openResume(){
+	window.open("resource/resume.pdf")
+}
