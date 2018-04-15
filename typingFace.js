@@ -65,14 +65,14 @@ var aText2 = new Array(
 "--..----------.-...------..--.-............................--.............................................```....`......`````````"); // set up text to print, each item in array is new line
 var elementID2 = "textImage"; //id of the place where the typing will happen
 var writeInNewLine2 = true;
-var iSpeed2 = 1; // time delay of print out
+var iSpeed2 = 0.5; // time delay of print out
 var iIndex2 = 0; // start printing array at this posision
 var iArrLength2 = aText2[0].length; // the length of the text array
 var iScrollAt2 = 20; // start scrolling up at this many lines
 var iTextPos2 = 0; // initialise text position
 var sContents2 = ''; // initialise contents variable
 var iRow2; // initialise current row
-var writeSpeed = 50;
+var writeSpeed = 5;
 function typewriter2(){
 	sContents2 =  ' ';
  	iRow2 = 0;
