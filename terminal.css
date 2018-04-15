@@ -1,0 +1,90 @@
+.terminal {
+  width: 100%;
+  background: black;
+  min-height: 300px;
+  max-width: 600px;
+  margin: 0 auto;
+  border-top-left-radius: 1%;
+  border-top-right-radius: 1%;
+  border-bottom-left-radius: 1%;
+  border-bottom-right-radius: 1%;
+
+}
+
+.terminal-header {
+  display: flex;
+  align-items: center;
+  background: lightgrey;
+}
+
+.terminal-buttons {
+  display: flex;
+  margin-left: 0.7em;
+}
+
+.terminal-title {
+  font-size: 10px;
+  color: darkgrey;
+  font-weight: 200;
+  text-transform: lowercase;
+}
+
+.col-6 {
+  flex: 0 0 40%;
+}
+
+.col-8 {
+  flex: 0 0 60%;
+}
+
+.red,
+.yellow,
+.green {
+  height: 10px;
+  width: 10px;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+.red {
+  background: tomato;
+}
+
+.yellow {
+  background: yellow;
+}
+
+.green {
+  background: seagreen;
+}
+
+.terminal-body {
+  max-width: 95%;
+  margin: 0 auto;
+  position: relative;
+}
+.terminal-body h5 {
+  font-size: 12px;
+  color: #00ff00;
+  font-weight: 200;
+  letter-spacing: 1px;
+}
+.terminal-body .tblinker {
+  display: inline-block;
+  background: #00ff00;
+  height: 12px;
+  width: 5px;
+  position: absolute;
+  margin-left: 1em;
+  -webkit-animation: blink .4s alternate infinite;
+  animation: blink .4s alternate infinite;
+  cursor: auto;
+}
+
+@-webkit-keyframes blink {
+  from {background: #00ff00;}
+  to {background: #000;}
+}
+@keyframes blink {
+  from {background: #00ff00;}
+  to {background: #000;}
+}

@@ -15,12 +15,14 @@
 <!--Linking all the neccessary-->
 	<link rel="stylesheet" href="style.css" />
 	<link rel="stylesheet" href="rMenu.css" />
+	<link rel="stylesheet" href="terminal.css" />
 
 	<link rel="shortcut icon" href="img/icon.ico">
 	<link rel="icon" type="image/png" href="img/icon.png">
 	<script src="buttonActions.js"></script>
-	<script src="typing.js"></script>
-	<script src="drawFace.js"></script>
+	<script src="typingName.js"></script>
+	<script src="typingFace.js"></script>
+<!-- 	<script src="typingTerminal.js"></script> -->
 	<script src="rMenu.js"></script>
 <!-- importing javascript and css-->
 </head>
@@ -49,7 +51,7 @@
 		<button id="socialBtn" onclick="openEmail()"><i class="fas fa-envelope-square"></i> E-Mail</button>
 	</div>
 	<div class="container">
-	 	<div class="row">
+<!-- 	 	<div class="row">
 	    	<div class="col-sm-6 col-md-6 col-xs-12">
 	    		<div class="container">
 					<p>
@@ -65,19 +67,37 @@
 					</p>
 				</div>
 	    	</div>
-	    </div>
-
- <!-- 		<div class="row">
- 			<div class="imgContainer">
- 				<img id="dosScreen" src='img/dosScreen.png'/>
- 				<p id="dosText" style="color: white;">I am an enthusiastic Programmer with 5 years of programming experiences in Java, C++, and Python. </p>
- 			</div>
- 		</div> -->
+	    </div> -->
 
 	    <div class="row">
+		    <div class='terminal'>
+		      <div class='terminal-header'>
+		        <div class='col-6'>
+		          <div class='terminal-buttons'>
+		            <div class='red'></div>
+		            <div class='yellow'></div>
+		            <div class='green'></div>
+		          </div>
+		        </div>
+		        <div class='col-8'>
+		          <h4 class='terminal-title'>kyle-bash-</h4>
+		        </div>
+		      </div>
+		      <div class='terminal-body'>
+		        <div class='terminal-name'>
+		        	<p id="textImage"></p> 
+		        	<h5 id="textHere">kyle@kim:~$  5 years of programming experiences in Java, and Python.</h5>
+		        	<h5 id="textHere">kyle@kim:~$  Self-learning individual with great teamwork skill.</h5>
+		          	<h5 id="textHere">kyle@kim:~$  Responsible and Initiative.<span class="tblinker"></span></h5>
+		        </div>
+		      </div>
+		    </div>
+	    </div>
+
+<!-- 	    <div class="row">
 	    	<p id="textImage"></p> 
 	    	<p style="font-size: 15px;text-align: center;">I EAT CPU..... mmm..... delicious....</p> 
-	    </div>
+	    </div> -->
 
 	</div>
 </body>

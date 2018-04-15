@@ -55,6 +55,7 @@ body, html{
     font-size: 13px;
 }
 #textImage{
+    color: #00ff00;
     text-align: center;
     font-size: 3px;
     font-family: monospace;
@@ -62,28 +63,10 @@ body, html{
 
 span{
     color: black;
-    animation: blink 1s linear infinite;
+    animation: blink2 1s linear infinite;
 }
-@keyframes blink{
+@keyframes blink2{
     0%{opacity: 0;}
     50%{opacity: .5;}
     100%{opacity: 1;}
-}
-
-.imgContainer{
-   position: relative; 
-   width: 100%; /* for IE 6 */
-}
-
-#dosScreen{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 70%;
-}
-#dosText{
-    position: absolute; 
-    top: 80px; 
-    left: 200px; 
-    width: 100%; 
 }
