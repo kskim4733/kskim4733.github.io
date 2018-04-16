@@ -14,7 +14,7 @@ body, html{
     text-align: center;
 }
 #myname {
-    font-size: 50px;
+    font-size: 5vw;
     position: relative; 
     white-space: nowrap;
     display:inline-block;

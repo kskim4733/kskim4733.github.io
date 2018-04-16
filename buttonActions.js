@@ -7,9 +7,12 @@ function openLinkedin() {
 }
 
 function openEmail() {
-	window.location.href = "mailto:kskim4733@gmail.com"
+	window.location.href = "mailto:kskim4733@gmail.com";
 }
 
 function openResume(){
-	window.open("resource/resume.pdf")
+	window.open("resource/resume.pdf");
+}
+function openTest(){
+	window.open("test.html");
 }
