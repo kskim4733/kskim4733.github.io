@@ -11,7 +11,7 @@ function openEmail() {
 }
 
 function openResume(){
-	window.open("resource/resume.pdf");
+	window.open("resume.pdf");
 }
 function openTest(){
 	window.open("test.html");
