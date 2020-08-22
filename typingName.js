@@ -1,4 +1,4 @@
-var elementID = "myname"; //id of the place where the typing will happen
+var elementID = "type-animation-name"; //id of the place where the typing will happen
 var writeInNewLine = true;
 var aText = new Array("KYLE KIM","Computer Scientist"); // set up text to print, each item in array is new line
 var iSpeed = 100; // time delay of print out

@@ -13,6 +13,3 @@ function openEmail() {
 function openResume(){
 	window.open("resume.pdf");
 }
-function openTest(){
-	window.open("test.html");
-}

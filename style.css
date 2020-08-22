@@ -10,16 +10,16 @@ body, html{
 }
 
 
-.typewriter{
+#type-animation-wrapper {
     text-align: center;
 }
-#myname {
+#type-animation-name {
     font-size: 5vw;
     position: relative; 
     white-space: nowrap;
     display:inline-block;
 }
-.wrapper {
+#social-wrapper {
     text-align: center;
     padding: 5px 5px; /* Some padding */
 }
@@ -56,7 +56,6 @@ body, html{
 }
 #textImage{
     color: #00ff00;
-    text-align: center;
     font-size: 3px;
     font-family: monospace;
 }

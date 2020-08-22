@@ -90,7 +90,7 @@ function typewriter2(){
 	   		iArrLength2 = aText2[iIndex2].length;
 	   		setTimeout("typewriter2()", writeSpeed);
 	  	}
- 	}else{
+ 	} else {
   		setTimeout("typewriter2()", iSpeed2);
   		destination2.innerHTML = sContents2 + aText2[iIndex2].substring(0, iTextPos2) + "|";
  	}

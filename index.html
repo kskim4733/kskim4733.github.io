@@ -28,6 +28,7 @@
 </head>
 <body>
 	<div class="container">
+		<!-- Where Top Menu goes -->
 		<div class="row">
 			<div class="topnav" id="myTopnav">
 			  	<a href="#home" class="active">Home</a>
@@ -39,63 +40,57 @@
 			  	<a href="javascript:void(0);" class="icon" onclick="responsiveToggle()">&#9776;</a>
 			</div>
 		</div>
-	</div>
-
-<!-- Where my name and typing animatio goes -->
-	<div class="typewriter">
-		<h1 id='myname'></h1>
-	</div>
-<!-- Social button menubar -->
-	<div class="wrapper">
-		<button id="socialBtn" onclick="openGit()"><i class="fab fa-github-square"></i> GitHub</button>
-		<button id="socialBtn" onclick="openLinkedin()"><i class="fab fa-linkedin"></i> LinkedIn</button>
-		<button id="socialBtn" onclick="openEmail()"><i class="fas fa-envelope-square"></i> E-Mail</button>
-	</div>
-	<div class="container">
-<!-- 	 	<div class="row">
+		<div class="row">
 	    	<div class="col-sm-6 col-md-6 col-xs-12">
-	    		<div class="container">
-					<p>
-					<img src='img/myUglyFace.jpg' id='facePic' alt="My puny head" class="left" />
-					<p id=selfText>
-						<br>
-						I am an enthusiastic Programmer with 5 years of programming experiences in Java, C++, and Python. <br><br>
-						I have always considered myself as a self-learning individual with great teamwork skill. <br><br>
-						I am responsible and initiative individual who always accomplishes the given task within the deadline. <br><br>
-						Dont even bother reading above bullshit ITS NOT DONE!! <br>
-					</p>
-
-					</p>
-				</div>
+				<img src='img/facePic.jpg' id='facePic' alt="My puny head" class="left" />
+				<p id=selfText>
+					<br>
+					I am an enthusiastic Programmer with 5 years of programming experiences in Java, C++, and Python. <br><br>
+					I have always considered myself as a self-learning individual with great teamwork skill. <br><br>
+					I am responsible and initiative individual who always accomplishes the given task within the deadline. <br><br>
+					Dont even bother reading above bullshit ITS NOT DONE!! <br>
+				</p>
 	    	</div>
-	    </div> -->
-
+	    </div>
+		<div class="row">
+			<!-- Where my name and typing animation goes -->
+			<div id="type-animation-wrapper">
+				<h1 id='type-animation-name'></h1>
+			</div>
+			<!-- Social button menubar -->
+			<div id="social-wrapper">
+				<button id="socialBtn" onclick="openGit()"><i class="fab fa-github-square"></i> GitHub</button>
+				<button id="socialBtn" onclick="openLinkedin()"><i class="fab fa-linkedin"></i> LinkedIn</button>
+				<button id="socialBtn" onclick="openEmail()"><i class="fas fa-envelope-square"></i> E-Mail</button>
+			</div>
+		</div>
 	    <div class="row">
-	    	<br>
+			<br>
+			<!-- Terminal Animation -->
 		    <div class='terminal'>
-		      <div class='terminal-header'>
-		        <div class='col-6'>
-		          <div class='terminal-buttons'>
-		            <div class='red'></div>
-		            <div class='yellow'></div>
-		            <div class='green'></div>
-		          </div>
-		        </div>
-		        <div class='col-8'>
-		          <h4 class='terminal-title'>cpu-eater-</h4>
-		        </div>
-		      </div>
-		      <div class='terminal-body'>
-		        <div class='terminal-name'>
-		        	<h5 id="textHere">owner@kimputer:~$  open Kyle_Kim</h5>
-		        	<h5 id="textHere">-5 years of programming experiences in Java, and Python.</h5>
-		        	<h5 id="textHere">--Responsible and great teamworker.</h5>
-		          	<h5 id="textHere">---Self-learning and Initiative.<span class="tblinker"></span></h5>
-		          	<p id="textImage"></p> 
-		        </div>
-		      </div>
+		    	<div class='terminal-header'>
+		        	<div class='col-6'>
+		          		<div class='terminal-buttons'>
+		            		<div class='red'></div>
+		            		<div class='yellow'></div>
+		            		<div class='green'></div>
+		          		</div>
+		        	</div>
+		        	<div class='col-8'>
+		          		<h4 class='terminal-title'>Kyle@Kimputer</h4>
+		        	</div>
+		      	</div>
+		    	<div class='terminal-body'>
+		    		<div class='terminal-name'>
+		        		<h5 id="textHere">owner@kimputer:~$  cat Kyle_Kim</h5>
+		        		<h5 id="textHere">-Years of programming experiences in Java, Python and more.</h5>
+		        		<h5 id="textHere">--Responsible team player.</h5>
+						<h5 id="textHere">---Self-learning and Initiative.</h5>
+						<h5 id="textHere">---Check My Resume For More Information!<span class="tblinker"></span></h5>
+		          		<p id="textImage"></p> 
+		        	</div>
+		      	</div>
 		    </div>
-		    <p style="font-size: 15px;text-align: center;">I EAT CPU..... mmm..... delicious....</p> 
 	    </div>
 	</div>
 </body>
