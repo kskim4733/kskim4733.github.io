@@ -63,7 +63,7 @@ var aText2 = new Array(
 "-...---........--.........................-.------------:::--/+/-.....................................``..```....`.....```````````",
 "--..----.----..-.....---..................-..............-------..........................................```....`.....```````````",
 "--..----------.-...------..--.-............................--.............................................```....`......`````````"); // set up text to print, each item in array is new line
-var elementID2 = "textImage"; //id of the place where the typing will happen
+var elementID2 = "type-animation-face"; //id of the place where the typing will happen
 var writeInNewLine2 = true;
 var iSpeed2 = 0.5; // time delay of print out
 var iIndex2 = 0; // start printing array at this posision

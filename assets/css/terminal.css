@@ -88,3 +88,14 @@
   from {background: #00ff00;}
   to {background: #000;}
 }
+
+span{
+  color: black;
+  animation: blink2 1s linear infinite;
+}
+
+@keyframes blink2{
+  0%{opacity: 0;}
+  50%{opacity: .5;}
+  100%{opacity: 1;}
+}

@@ -13,17 +13,16 @@
 	<link href='https://fonts.googleapis.com/css?family=Allerta Stencil' rel='stylesheet'>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <!--Linking all the neccessary-->
-	<link rel="stylesheet" href="style.css" />
-	<link rel="stylesheet" href="rMenu.css" />
-	<link rel="stylesheet" href="terminal.css" />
+	<link rel="stylesheet" href="assets/css/style.css" />
+	<link rel="stylesheet" href="assets/css/rMenu.css" />
+	<link rel="stylesheet" href="assets/css/terminal.css" />
 
-	<link rel="shortcut icon" href="img/icon.ico">
-	<link rel="icon" type="image/png" href="img/icon.png">
-	<script src="buttonActions.js"></script>
-	<script src="typingName.js"></script>
-	<script src="typingFace.js"></script>
+	
+	<script src="assets/js/buttonActions.js"></script>
+	<script src="assets/js/typingName.js"></script>
+	<script src="assets/js/typingFace.js"></script>
 <!-- 	<script src="typingTerminal.js"></script> -->
-	<script src="rMenu.js"></script>
+	<script src="assets/js/rMenu.js"></script>
 <!-- importing javascript and css-->
 </head>
 <body>
@@ -33,25 +32,13 @@
 			<div class="topnav" id="myTopnav">
 			  	<a href="#home" class="active">Home</a>
 			  	<a href="#about">About</a>
-			  	<a href="#projects">Side Projects</a>
+				  <a href="#education">Education</a>
+				  <a href="#experience">Work Experience</a>
 			  	<a onclick="openResume()" href="#resume">Resume</a>
 			  	<a href="#contact">Contact</a>
-			  	<a onclick="openTest()" href="#contact">Test Zone</a>
 			  	<a href="javascript:void(0);" class="icon" onclick="responsiveToggle()">&#9776;</a>
 			</div>
 		</div>
-		<div class="row">
-	    	<div class="col-sm-6 col-md-6 col-xs-12">
-				<img src='img/facePic.jpg' id='facePic' alt="My puny head" class="left" />
-				<p id=selfText>
-					<br>
-					I am an enthusiastic Programmer with 5 years of programming experiences in Java, C++, and Python. <br><br>
-					I have always considered myself as a self-learning individual with great teamwork skill. <br><br>
-					I am responsible and initiative individual who always accomplishes the given task within the deadline. <br><br>
-					Dont even bother reading above bullshit ITS NOT DONE!! <br>
-				</p>
-	    	</div>
-	    </div>
 		<div class="row">
 			<!-- Where my name and typing animation goes -->
 			<div id="type-animation-wrapper">
@@ -87,11 +74,49 @@
 		        		<h5 id="textHere">--Responsible team player.</h5>
 						<h5 id="textHere">---Self-learning and Initiative.</h5>
 						<h5 id="textHere">---Check My Resume For More Information!<span class="tblinker"></span></h5>
-		          		<p id="textImage"></p> 
+		          		<p id="type-animation-face"></p> 
 		        	</div>
 		      	</div>
 		    </div>
-	    </div>
+		</div>
+		<!-- Where the content goes -->
+		<div class="row" id="about">
+			<div class="content-container">
+				<h1>
+					About Me
+				</h1>
+				<div class="content-box">
+					<div class="image-wrapper">
+						<img src='assets/img/facePic.jpg' id='facePic' alt="Supposed to Picture of My Head oops"/>
+					</div>
+					<div>
+						<p1>I am an eager self-learning individual with great teamwork and interpersonal skills. I am currently seeking for software developer opportunities in the Toronto area.
+						</br></br>
+						I am a recent graduate from the University of Toronto’s Computer Science program and currently live in Toronto. My previous professional experience includes my work at the University of Toronto Victoria University as a software developer, as well as at IBM as a Software Developer intern.</p1>
+					</div>
+			
+				</div>
+			</div>
+		</div>
+		<div class="row" id="education">
+			<div class="content-container">
+				<h1>
+					My Education
+				</h1>
+				<div class="content-box">
+					<div>
+						<p1>UNIVERSITY OF TORONTO</p1>
+						<p1>Bachelor of Science in Computer Science</p1>
+					</div>
+			
+				</div>
+			</div>
+		</div>
+		<!-- <div class="row" id="experience">
+		</div>
+		<div class="row" id="contact">
+		</div> -->
+		
 	</div>
 </body>
 </html>
