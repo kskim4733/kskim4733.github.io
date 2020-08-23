@@ -5,40 +5,43 @@
 -->
 <html>
 <head>
+<!-- WebPage title and stuffs -->
 	<title>Kyle Kim</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<!-- Bootstrap -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
-	<link href='https://fonts.googleapis.com/css?family=Allerta Stencil' rel='stylesheet'>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<!--Linking all the neccessary-->
+
+<!-- Fonts -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+<!--CSS-->
 	<link rel="stylesheet" href="assets/css/style.css" />
 	<link rel="stylesheet" href="assets/css/rMenu.css" />
 	<link rel="stylesheet" href="assets/css/terminal.css" />
 
-	
+<!-- Javascript -->
 	<script src="assets/js/buttonActions.js"></script>
 	<script src="assets/js/typingName.js"></script>
-	<script src="assets/js/typingFace.js"></script>
-<!-- 	<script src="typingTerminal.js"></script> -->
+	<script src="assets/js/typingTerminal.js"></script>
 	<script src="assets/js/rMenu.js"></script>
-<!-- importing javascript and css-->
 </head>
+
 <body>
+	<!-- Where Top Menu goes -->
+	<div class="topnav" id="myTopnav">
+		<a href="#home" class="active">Home</a>
+		<a href="#about">About</a>
+		<a href="#education">Education</a>
+		<a href="#experience">Work Experience</a>
+		<a onclick="openResume()" href="#resume">Resume</a>
+		<a href="#contact">Contact</a>
+		<a href="javascript:void(0);" class="icon" onclick="responsiveToggle()">&#9776;</a>
+	</div>
 	<div class="container">
-		<!-- Where Top Menu goes -->
-		<div class="row">
-			<div class="topnav" id="myTopnav">
-			  	<a href="#home" class="active">Home</a>
-			  	<a href="#about">About</a>
-				  <a href="#education">Education</a>
-				  <a href="#experience">Work Experience</a>
-			  	<a onclick="openResume()" href="#resume">Resume</a>
-			  	<a href="#contact">Contact</a>
-			  	<a href="javascript:void(0);" class="icon" onclick="responsiveToggle()">&#9776;</a>
-			</div>
-		</div>
 		<div class="row">
 			<!-- Where my name and typing animation goes -->
 			<div id="type-animation-wrapper">
@@ -51,7 +54,7 @@
 				<button id="socialBtn" onclick="openEmail()"><i class="fas fa-envelope-square"></i> E-Mail</button>
 			</div>
 		</div>
-	    <div class="row">
+	    <div class="row" id="terminal-div">
 			<br>
 			<!-- Terminal Animation -->
 		    <div class='terminal'>
@@ -70,11 +73,7 @@
 		    	<div class='terminal-body'>
 		    		<div class='terminal-name'>
 		        		<h5 id="textHere">owner@kimputer:~$  cat Kyle_Kim</h5>
-		        		<h5 id="textHere">-Years of programming experiences in Java, Python and more.</h5>
-		        		<h5 id="textHere">--Responsible team player.</h5>
-						<h5 id="textHere">---Self-learning and Initiative.</h5>
-						<h5 id="textHere">---Check My Resume For More Information!<span class="tblinker"></span></h5>
-		          		<p id="type-animation-face"></p> 
+		          		<p id="type-animation-terminal"></p> 
 		        	</div>
 		      	</div>
 		    </div>
@@ -86,36 +85,104 @@
 					About Me
 				</h1>
 				<div class="content-box">
-					<div class="image-wrapper">
-						<img src='assets/img/facePic.jpg' id='facePic' alt="Supposed to Picture of My Head oops"/>
+					<div class="row">
+						<div class="col-sm-5" id="face-image-wrapper">
+							<img src='assets/img/facePic.jpg' id='facePic' alt="Supposed to Picture of My Head oops"/>
+						</div>
+						<div class="col-sm-5">
+							<p1>I am an eager self-learning individual with great teamwork and interpersonal skills. I am currently seeking for software developer opportunities in the Toronto area.
+							</br></br>
+							I am a recent graduate from the University of Toronto’s Computer Science program and currently live in Toronto. My previous professional experience includes my work at the University of Toronto Victoria University as a software developer, as well as at IBM as a Software Developer intern.</p1>
+						</div>
 					</div>
-					<div>
-						<p1>I am an eager self-learning individual with great teamwork and interpersonal skills. I am currently seeking for software developer opportunities in the Toronto area.
-						</br></br>
-						I am a recent graduate from the University of Toronto’s Computer Science program and currently live in Toronto. My previous professional experience includes my work at the University of Toronto Victoria University as a software developer, as well as at IBM as a Software Developer intern.</p1>
-					</div>
-			
 				</div>
 			</div>
 		</div>
 		<div class="row" id="education">
 			<div class="content-container">
 				<h1>
-					My Education
+					Education
 				</h1>
 				<div class="content-box">
-					<div>
-						<p1>UNIVERSITY OF TORONTO</p1>
-						<p1>Bachelor of Science in Computer Science</p1>
+					<div class="title-container">
+						<p1 id="content-heading">UNIVERSITY OF TORONTO</p1>
+						<p1 class="addtional-info">St. George Campus</p1>
 					</div>
-			
+					<div>
+						<p1 id="content-sub-heading">Bachelor of Science</p1>
+						<p1 class="addtional-info">2015-2020</p1>
+					</div>
+					<div>
+						<p1>Computer Science Specialist</p1>
+					</div>
+					<ul>
+                      <li class="list-item">Software Design</li>
+                      <li class="list-item">Probability With Computer Applications</li>
+                      <li class="list-item">Software Tools & System Programming</li>
+                      <li class="list-item">Programming On The Web</li>
+                      <li class="list-item">Algorithm Design &amp; and Analysis </li>
+                      <li class="list-item">Operating Systems</li>
+                      <li class="list-item">Computer Networks</li>
+					  <li class="list-item">Human Computer Interaction</li>
+                  </ul>
 				</div>
 			</div>
 		</div>
-		<!-- <div class="row" id="experience">
+		<div class="row" id="experience">
+			<div class="content-container">
+				<h1>
+					Work Experience
+				</h1>
+				<div class="content-box">
+					<div class="title-container">
+						<p1 id="content-heading">University of Toronto, E.J Pratt library</p1>
+						<p1 class="addtional-info">2019-2020 March</p1>
+					</div>
+					<div>
+						<p1 id="content-sub-heading">Tech Support & Software Developer</p1>
+					</div>
+					<ul>
+						<li class="list-item">Using Python and PHP, implemented a PDF text query feature that returns the coordinates and the page number of all the instances of the queried text and the paragraph that contains the text within the PDF file.</li>
+
+						<li class="list-item">Created an isolated testing environment using VirtualBox for the library’s digital asset management system to safely test and apply the changes without affecting the published system.</li>
+
+						<li class="list-item">Provided personalized support to the library visitors who experienced technical difficulties with the library’s system</li>
+					</ul>
+					<div class="title-container">
+						<p1 id="content-heading">IBM</p1>
+						<p1 class="addtional-info">2018-2019</p1>
+					</div>
+					<div>
+						<p1 id="content-sub-heading">Software Developer Intern</p1>
+					</div>
+					<ul>
+						<li class="list-item">Worked on a microservice architecture based application that was used to automate the testing and deployment of the MDM product based on user-configurable test scenarios.</li>
+
+						<li class="list-item">Worked on back-end of the application using RESTful API, Java, and MongoDB.  Improved reliability and functionality of the backend.</li>
+
+						<li class="list-item">Worked on front-end of the application using VueJS and Node.js. Improved the user experience and the functionality of the front-end of the application.</li>
+
+						<li class="list-item">Worked as part of a SCRUM team to effectively communicate and collaborate with other collegues.</li>
+
+						<li class="list-item">Worked on various Devops tasks that involve Docker, Gradle, Nexus and Shell Scripting.  </li>
+					</ul>
+				</div>
+			</div>
+			
 		</div>
 		<div class="row" id="contact">
-		</div> -->
+			<div class="content-container">
+				<h1>
+					Contact
+				</h1>
+				<div class="content-box">
+					<div>
+						<p1>kskim4733 [at] gmail.com</p1><br>
+						<p1>Check My Resume For More Contact Options</p1>
+					</div>
+				</div>
+			</div>
+		</div>
 		
 	</div>
 </body>
