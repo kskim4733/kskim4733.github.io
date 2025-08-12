@@ -1,6 +1,6 @@
 var elementID = "type-animation-name"; //id of the place where the typing will happen
 var writeInNewLine = true;
-var aText = new Array("KYLE KIM","Computer Scientist"); // set up text to print, each item in array is new line
+var aText = new Array("Kyle Kim"); // set up text to print, each item in array is new line
 var iSpeed = 100; // time delay of print out
 var iIndex = 0; // start printing array at this posision
 var iArrLength = aText[0].length; // the length of the text array
@@ -19,7 +19,9 @@ function typewriter(){
 	 	}
 	}
  	if ( iTextPos++ == iArrLength ) {
- 		destination.innerHTML = sContents + aText[iIndex].substring(0, iTextPos) + "<span>|</span>"; //add blinking animation to span tag
+ 		// destination.innerHTML = sContents + aText[iIndex].substring(0, iTextPos) + "<span>|</span>"; //add blinking animation to span tag
+		destination.innerHTML = sContents + aText[iIndex].substring(0, iTextPos)
+
 	  	iTextPos = 0;
 	  	iIndex++;
 	  	if ( iIndex != aText.length ) {
@@ -28,7 +30,8 @@ function typewriter(){
 	  	}
  	}else{
   		setTimeout("typewriter()", iSpeed);
-  		destination.innerHTML = sContents + aText[iIndex].substring(0, iTextPos) + "|";
+  		destination.innerHTML = sContents + aText[iIndex].substring(0, iTextPos);
+		// destination.innerHTML = sContents + aText[iIndex].substring(0, iTextPos) + "|";
  	}
 }
 
