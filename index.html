@@ -176,23 +176,37 @@
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16">
           <h2 class="font-mono text-accent text-sm tracking-widest">EXPERIENCE</h2>
           <div class="mt-4 space-y-6">
+            <!-- Flexspring -->
+            <article class="rounded-xl border border-white/10 p-6">
+              <header class="flex items-center justify-between flex-wrap gap-2">
+                <h3 class="text-accent font-semibold">Flexspring</h3>
+                <span class="text-sm text-mute">2020–Present</span>
+              </header>
+              <p class="text-sm text-mute">Senior Technical Consultant & Partner Solutions Specialists</p>
+              <ul class="mt-3 space-y-2 text-sm leading-relaxed">
+                <li>• Built and scaled a core SaaS API in Java + Spring Boot, serving thousands of requests/day; shipped Dockerized services on Linux and used Kibana for real-time monitoring and rapid incident triage.</li>
+                <li>• Designed reliable data layers and services with MySQL/PostgreSQL and Spring Data JPA; delivered in an Agile team with Jenkins, Bitbucket, and Jira driving CI/CD and fast iteration.</li>
+                <li>• Delivered 60+ production integrations across ADP, BambooHR, Workday and more using Groovy, REST/SOAP, and SFTP—automation that reduced manual data entry by ~80%.</li>
+                <li>• Primary consultant for 40+ companies, typically managing ~5 concurrent, 3-month projects end-to-end—from discovery and solution design to rollout, optimization, and ongoing support.</li>
+              </ul>
+            </article>
             <!-- UofT -->
             <article class="rounded-xl border border-white/10 p-6">
               <header class="flex items-center justify-between flex-wrap gap-2">
-                <h3 class="font-semibold">University of Toronto — E.J. Pratt Library</h3>
+                <h3 class="text-accent font-semibold">University of Toronto — E.J. Pratt Library</h3>
                 <span class="text-sm text-mute">2019–Mar 2020</span>
               </header>
               <p class="text-sm text-mute">Tech Support & Software Developer</p>
               <ul class="mt-3 space-y-2 text-sm leading-relaxed">
                 <li>• Implemented a PDF text query feature (Python/PHP) returning coordinates, page numbers, and surrounding paragraphs for matches.</li>
-                <li>• Built an isolated VirtualBox environment to safely test changes to the digital asset management system.</li>
+                <li>• Built a virtual code-test environment for the library's in-house digital asset management system using VirtualBox  </li>
                 <li>• Provided on-site technical support to library visitors.</li>
               </ul>
             </article>
             <!-- IBM -->
             <article class="rounded-xl border border-white/10 p-6">
               <header class="flex items-center justify-between flex-wrap gap-2">
-                <h3 class="font-semibold">IBM</h3>
+                <h3 class="text-accent font-semibold">IBM</h3>
                 <span class="text-sm text-mute">2018–2019</span>
               </header>
               <p class="text-sm text-mute">Software Developer Intern</p>
@@ -212,7 +226,9 @@
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16">
           <h2 class="font-mono text-accent text-sm tracking-widest">CONTACT</h2>
           <div class="mt-4 grid lg:grid-cols-2 gap-8 items-start">
-            <form class="rounded-xl border border-white/10 p-6 grid gap-3" name="contact">
+            <form class="rounded-xl border border-white/10 p-6 grid gap-3" name="contact" 
+            action="https://formspree.io/f/mjkodegn"
+            method="POST">
               <label class="text-sm">Name
                 <input class="mt-1 w-full bg-transparent border border-white/10 rounded px-3 py-2 focus:outline-none focus:shadow-glow" name="name" required />
               </label>
@@ -222,7 +238,7 @@
               <label class="text-sm">Message
                 <textarea class="mt-1 w-full bg-transparent border border-white/10 rounded px-3 py-2 h-28 focus:outline-none focus:shadow-glow" name="message" required></textarea>
               </label>
-              <button class="mt-2 justify-self-start px-4 py-2 rounded bg-white/5 hover:bg-white/10 border border-white/10 focus:outline-none focus:shadow-glow">Send</button>
+              <button type="submit" class="mt-2 justify-self-start px-4 py-2 rounded bg-white/5 hover:bg-white/10 border border-white/10 focus:outline-none focus:shadow-glow">Send</button>
             </form>
           </div>
         </div>
